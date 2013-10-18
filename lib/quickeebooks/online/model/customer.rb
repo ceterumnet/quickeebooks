@@ -5,6 +5,7 @@ require "quickeebooks/online/model/address"
 require "quickeebooks/online/model/phone"
 require "quickeebooks/online/model/web_site"
 require "quickeebooks/online/model/email"
+require "quickeebooks/online/model/sales_term"
 require "quickeebooks/online/model/note"
 require "quickeebooks/online/model/customer_custom_field"
 require "quickeebooks/online/model/open_balance"
@@ -24,7 +25,7 @@ module Quickeebooks
         xml_accessor :notes, :from => 'Notes', :as => [Quickeebooks::Online::Model::Note]
         xml_accessor :custom_fields, :from => 'CustomField', :as => [Quickeebooks::Online::Model::CustomerCustomField]
         xml_accessor :paymethod_method_id, :from => 'PaymentMethodId', :as => Quickeebooks::Online::Model::Id
-
+        xml_accessor :sales_term_id, :from => 'SalesTerm', :as => Quickeebooks::Online::Model::Id
         validates_length_of :name, :minimum => 1
 
       end
