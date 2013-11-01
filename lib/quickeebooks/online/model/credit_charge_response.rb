@@ -10,7 +10,6 @@ module Quickeebooks
         xml_accessor :recon_batch_id,          :from => 'ReconBatchId'
         xml_accessor :payment_grouping_code,   :from => 'PaymentGroupingCode'
         xml_accessor :merchant_account_number, :from => 'MerchantAccountNumber'
-        xml_accessor :payment_grouping_code,   :from => 'PaymentGroupingCode'
         xml_accessor :txn_authorization_stamp, :from => 'TxnAuthorizationStamp'
       end
     end
